@@ -38,14 +38,12 @@ class _XylophoneAppState extends State<XylophoneApp> {
 
     Expanded buildKey({Color? color, int? soundNumber}) {
       return Expanded(
-        child: FlatButton(
+        child: MaterialButton(
           color: color,
-          // style: ElevatedButton.styleFrom(primary: Colors.color),
           onPressed: () {
-            // voiceFun();
             playSound(soundNumber!);
           },
-          child: Text('press'),
+          child: const Text('Press'),
         ),
       );
     }
